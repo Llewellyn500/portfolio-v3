@@ -962,4 +962,7 @@ button {
     display: block;
     margin-bottom: 10px;
   }
+  .about-content img{
+    max-width: 230px;
+  }
 }
