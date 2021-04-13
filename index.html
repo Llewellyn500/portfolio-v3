@@ -8,12 +8,62 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Page Loader Start -->
+    <div class="page-loader">
+      <div class="page-loader-inner">
+        <div class="circle"></div>
+        Loading
+      </div>
+    </div>
+    <!-- Page Loader End -->
+
     <!-- Bg Animation Effect start -->
     <div class="bg-animation-effect"></div>
     <!-- Bg Animation Effect end -->
 
+    <!-- Overlay Effect Start  -->
+    <div class="overlay-effect">
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+    </div>
+    <!-- Overlay Effect End  -->
+
+    <!-- Header Start -->
+    <header class="header">
+      <div class="container">
+        <div class="row flex-end">
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <!-- nav -->
+          <nav class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li><a href="#about" class="nav-item link-item">about</a></li>
+                <li>
+                  <a href="#portfolio" class="nav-item link-item">portfolio</a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav-item link-item">contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
     <!-- About Section Start -->
-    <section class="about-section hidden">
+    <section class="about-section active" id="about">
       <div class="container">
         <div class="row min-vh-100">
           <div class="about-content">
@@ -22,9 +72,10 @@
             <p>
               I'm a <span>Youtuber</span> in Ghana. I make educational videos
               using <span>Premiere Pro</span>, and <span>Youtube</span>. Check
-              out my latest work on the <a href="#">portfolio page</a>. Want to
+              out my latest work on the
+              <a href="#portfolio" class="link-item">portfolio page</a>. Want to
               talk about a project? You can get in touch with me
-              <a href="#">here</a>.
+              <a href="#contact" class="link-item">here</a>.
             </p>
             <h2>skills</h2>
             <div class="skills">
@@ -42,7 +93,7 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section class="portfolio-section sec-padding">
+    <section class="portfolio-section sec-padding" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -321,7 +372,88 @@
     <!-- Portfolio Section End -->
 
     <!-- Contact Section Start -->
-
+    <section class="contact-section sec-padding min-vh-100" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>contact me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-content">
+            <div class="contact-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus voluptatum distinctio, doloribus possimus impedit
+                nemo numquam quam nostrum? Quas inventore quidem libero optio
+                molestias illum ad sit labore eaque numquam.
+              </p>
+            </div>
+            <div class="contact-info-item">
+              <p>Email me on <span>example@gmail.com</span></p>
+            </div>
+            <div class="contact-info-item">
+              <p class="social-links">
+                <span>Find me on</span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </p>
+            </div>
+            <button type="button" class="btn toggle-contact-form-btn">
+              Send Message
+            </button>
+          </div>
+          <!-- Contact Form Start -->
+          <div class="contact-form">
+            <div class="contact-form-inner">
+              <div class="contact-form-container">
+                <button
+                  type="button"
+                  class="close-btn toggle-contact-form-btn"
+                ></button>
+                <form>
+                  <div class="row">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        class="input-control"
+                      />
+                    </div>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Your Email"
+                        class="input-control"
+                      />
+                    </div>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        class="input-control"
+                      />
+                    </div>
+                    <div class="input-group">
+                      <textarea
+                        placeholder="Message"
+                        class="input-control"
+                      ></textarea>
+                    </div>
+                    <div class="input-group">
+                      <button type="submit" class="btn btn-submit">send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Form End -->
+        </div>
+      </div>
+    </section>
     <!-- Contact Section end -->
 
     <!-- Portfolio Item details Popup Start -->
